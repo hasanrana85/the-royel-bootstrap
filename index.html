@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royel coatching center</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/cropped-favicon.png" />
+    <!-- Bootstrap Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/fd26134d84.js" crossorigin="anonymous"></script>
+    <!-- animate.css stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- customcss stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header part start  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex" href="#">
+                    <img src="images/cropped-favicon.png" alt="" width="50" height="50"
+                        class="d-inline-block align-text-top">
+                    <h1 class="ms-3 me-5 text-primary fw-bold">The Royel</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our Staff</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="" class="me-3 text-decoration-none text-dark" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdropLogin"><i class="fas fa-sign-in-alt me-2"></i>Login</a>
+                        <a href="" class="me-3 text-decoration-none text-dark" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"><i class="fas fa-user me-2"></i>Register</a>
+                        <button class="btn btn-primary animation rounded-pill py-2 px-4 border-0 text-uppercase"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Rgister modal -->
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-info">
+                    <div class="modal-header">
+                        <h5 class="modal-title bg-primary p-2 text-white rounded" id="staticBackdropLabel">Registration
+                            Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="exampleInputName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputTel" class="form-label">Phone No</label>
+                                <input type="tel" class="form-control" id="exampleInputTel">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputCPassword1" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputCPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary animation rounded-pill py-2 px-4 border-0">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger rounded-pill py-2 px-3"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary rounded-pill py-2 px-3">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Register modal end -->
+        <!-- Login Modal start  -->
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdropLogin" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-info">
+                    <div class="modal-header">
+                        <h5 class="modal-title bg-primary p-2 text-white rounded" id="staticBackdropLabel">Login
+                            Form</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputName" class="form-label">User Name</label>
+                                <input type="text" class="form-control" id="exampleInputName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit"
+                                class="btn btn-primary animation rounded-pill py-2 px-4 border-0">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger rounded-pill py-2 px-3"
+                            data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary rounded-pill py-2 px-3">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Login Modal end  -->
+
+        <!-- carousel sliding start  -->
+        <section class="container my-5 bg-light">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner p-5">
+                    <div class="carousel-item active">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-lg-6">
+                                <h1
+                                    class="text-primary fw-bold animate__animated animate__bounce animate__infinite	infinite">
+                                    Making your childs world better</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero commodi repellendus
+                                    illo adipisci odio cumque at nulla error maxime!</p>
+                                <button
+                                    class="btn btn-info animation text-bold rounded-pill py-2 px-4 border-0 text-uppercase">Explore
+                                    Now</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/sliding-image/slider-1.jpg" class="d-block img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center align-items-center text-end">
+                            <div class="col-lg-6">
+                                <img src="images/sliding-image/slider-2.jpg" class="d-block img-fluid" alt="...">
+                            </div>
+                            <div class="col-lg-6">
+                                <h1
+                                    class="text-primary fw-bold animate__animated animate__fadeInLeft animate__infinite">
+                                    We ensure better education for a better world</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero commodi repellendus
+                                    illo adipisci odio cumque at nulla error maxime!</p>
+                                <button
+                                    class="btn btn-info text-bold rounded-pill py-2 px-4 animation border-0 text-uppercase">Explore
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-lg-6">
+                                <h1
+                                    class="text-primary fw-bold animate__animated animate__fadeInRight animate__infinite">
+                                    No nation can prosper in life without education</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vero commodi repellendus
+                                    illo adipisci odio cumque at nulla error maxime!</p>
+                                <button
+                                    class="btn btn-info text-bold rounded-pill py-2 px-4 animation border-0 text-uppercase">Explore
+                                    Now</button>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="images/sliding-image/slider-3.jpg" class="d-block img-fluid" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- carousel sliding end  -->
+    </header>
+    <!-- header part end  -->
+    <!-- Main part start  -->
+    <main>
+        <!-- Offer section start  -->
+        <section class="container mb-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">What We Offer
+                    </h1>
+                    <p class="mt-3 custom-p">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="background my-5 pb-2">
+            <div class="container">
+                <div class="row p-5 g-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="animation2 rounded-3 p-3 bg-light text-center h-200">
+                            <p class=" fw-bold"><i
+                                    class="fas fa-music bg-warning border border-primary border-5 p-3 rounded-circle"></i>
+                            </p>
+                            <h2 class="fw-bold text-warning">Music Class</h2>
+                            <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia,
+                                there live the blind texts.<a class="text-decoration-none ms-2" href="#">Read more..</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="h-200 animation2 rounded-3 p-3 bg-light text-center">
+                            <p class=" fw-bold"><i
+                                    class="fas fa-calculator bg-warning border border-primary border-5 p-3 rounded-circle"></i>
+                            </p>
+                            <h2 class="fw-bold text-warning">Math Class</h2>
+                            <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia,
+                                there live the blind texts.<a class="text-decoration-none ms-2" href="#">Read more..</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="h-200 animation2 rounded-3 p-3 bg-light text-center">
+                            <p class=" fw-bold"><i
+                                    class="fas fa-book-open bg-warning border border-primary border-5 p-3 rounded-circle"></i>
+                            </p>
+                            <h2 class="fw-bold text-warning">English Class</h2>
+                            <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia,
+                                there live the blind texts.<a class="text-decoration-none ms-2" href="#">Read more..</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="h-200 animation2 rounded-3 p-3 bg-light text-center">
+                            <p class=" fw-bold"><i
+                                    class="fas fa-atom bg-warning border border-primary border-5 p-3 rounded-circle"></i>
+                            </p>
+                            <h2 class="fw-bold text-warning">Chemistry Class</h2>
+                            <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia,
+                                there live the blind texts.<a class="text-decoration-none ms-2" href="#">Read more..</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="h-200 animation2 rounded-3 p-3 bg-light text-center">
+                            <p class=" fw-bold"><i
+                                    class="fas fa-tv bg-warning border border-primary border-5 p-3 rounded-circle"></i>
+                            </p>
+                            <h2 class="fw-bold text-warning">ICT Class</h2>
+                            <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia,
+                                there live the blind texts.<a class="text-decoration-none ms-2" href="#">Read more..</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="h-200 animation2 rounded-3 p-3 bg-light text-center">
+                            <p class="fw-bold"><i
+                                    class="fas fa-car-battery bg-warning border border-primary border-5 p-3 rounded-circle"></i>
+                            </p>
+                            <h2 class="fw-bold text-warning">Physics Class</h2>
+                            <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia
+                                and Consonantia,
+                                there live the blind texts.<a class="text-decoration-none ms-2" href="#">Read more..</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Offer section end  -->
+
+        <!-- about part start -->
+        <section class="container mt-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">About Us</h1>
+                    <p class="mt-3 custom-p">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row pb-5 d-flex justify-content-center align-items-center">
+                <div class="col-md-12 col-lg-6">
+                    <div class="p-5">
+                        <h1
+                            class="fw-bold mb-5 text-primary border-bottom border-danger border-5 pb-3 text-center animate__animated animate__bounce animate__infinite">
+                            Why Choose Us</h1>
+                        <p class="custom-p">Far far away, behind the word mountains, far from the countries Vokalia and
+                            Consonantia,
+                            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                            Semantics, a large language ocean.</p>
+                        <p class="custom-p"><span class="me-3 text-primary"><i class="fas fa-check-circle"></i></span>
+                            Separated they live</p>
+                        <p class="custom-p"><span class="me-3 text-primary"><i class="fas fa-check-circle"></i></span>
+                            Bookmarksgrove right at the
+                            coast</p>
+                        <p class="custom-p"><span class="me-3 text-primary"><i class="fas fa-check-circle"></i></span>
+                            large language ocean</p>
+                        <div class="row my-5">
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h1 class="text-info fw-bold">4,000+</h1>
+                                <p class="custom-p">Students</p>
+                            </div>
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h1 class="text-info fw-bold">49</h1>
+                                <p class="custom-p">Teachers</p>
+                            </div>
+                            <div class="col-4 col-md-4 col-lg-4">
+                                <h1 class="text-info fw-bold">12</h1>
+                                <p class="custom-p">Awards</p>
+                            </div>
+                        </div>
+                        <button
+                            class="btn btn-primary py-3 px-4 rounded-pill animation border-0 fw-bold text-uppercase">Admission</button>
+                        <button class="btn btn-outline-primary py-3 px-4 rounded-pill fw-bold text-uppercase m-2">Learn
+                            More</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="p-5">
+                        <video src="document.mp4" controls class="w-100" rounded-3"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our staff part start -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">Our Staff
+                    </h1>
+                    <p class="mt-3 custom-p">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/rana.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Abu Hasan Rana</h3>
+                                    <p class="text-danger fw-bold">Teacher in ICT</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia
+                                        and Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/rojob.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Rojjob Ali</h3>
+                                    <p class="text-danger fw-bold">Teacher in Physics</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and
+                                        Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/saddam.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Saddam Hossain</h3>
+                                    <p class="text-danger fw-bold">Teacher in Math</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and
+                                        Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/rana.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Abu Hasan Rana</h3>
+                                    <p class="text-danger fw-bold">Teacher in ICT</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia
+                                        and Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/rojob.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Rojjob Ali</h3>
+                                    <p class="text-danger fw-bold">Teacher in Physics</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and
+                                        Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/saddam.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Saddam Hossain</h3>
+                                    <p class="text-danger fw-bold">Teacher in Math</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and
+                                        Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/rana.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Abu Hasan Rana</h3>
+                                    <p class="text-danger fw-bold">Teacher in ICT</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia
+                                        and Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/rojob.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Rojjob Ali</h3>
+                                    <p class="text-danger fw-bold">Teacher in Physics</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and
+                                        Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4">
+                                <div class="text-center p-3">
+                                    <img class="w-75" src="images/teachers/saddam.png" alt="">
+                                    <h3 class="text-primary fw-bold">Md. Saddam Hossain</h3>
+                                    <p class="text-danger fw-bold">Teacher in Math</p>
+                                    <p class="custom-p">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and
+                                        Consonantia,
+                                        there live the blind texts.</p>
+                                    <p>
+                                        <i class="fab fa-facebook-f bg-info p-2 rounded-circle"></i>
+                                        <i class="fab fa-twitter bg-info p-2 rounded-circle mx-2"></i>
+                                        <i class="fab fa-linkedin-in bg-info p-2 rounded-circle"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- education for tomorrow leaders -->
+        <section class="container-fluid my-5">
+            <div class="overlay d-flex justify-content-center align-items-center">
+                <div class="text-center w-50">
+                    <h1 class="text-light bg-danger fw-bold">Education for Tomorrow's Leaders</h1>
+                    <p class="custom-p text-center text-white fw-bold">Far far away, behind the word mountains, far from
+                        the countries Vokalia and Consonantia, there
+                        live
+                        the blind texts.</p>
+                    <button class="btn btn-primary animation rounded-pill py-2 px-4 border-0 text-uppercase"
+                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enroll Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- our news part start  -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">Our Coatching
+                        News
+                    </h1>
+                    <p class="mt-3 custom-p">Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="row gy-2">
+                <div class="col-md-12 col-lg-6">
+                    <div class="card mb-3 shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4 overflow-hidden">
+                                <img src="images/news-1.png" class="w-100 rounded-start" alt="...">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Education for Tomorrow's Leaders</h4>
+                                    <p class="card-text">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card mb-3 shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4 overflow-hidden">
+                                <img src="images/news-2.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Enroll Your Kids This Summer to get 30% off</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card mb-3 shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4 overflow-hidden">
+                                <img src="images/news-2.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Enroll Your Kids This Summer to get 30% off</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="card mb-3 shadow-lg">
+                        <div class="row g-0">
+                            <div class="col-12 col-md-4 overflow-hidden">
+                                <img src="images/news-1.png" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-12 col-md-8">
+                                <div class="card-body">
+                                    <h4 class="card-title">Education for Tomorrow's Leaders</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our news part end  -->
+
+        <!-- Gallery part start -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">Gallery
+                    </h1>
+                    <p class="mt-3 custom-p animate__animated animate__fadeInLeft animate__infinite">Far far away,
+                        behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid" src="images/gallery/gallery-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-8.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gallery overflow-hidden">
+                        <img class="img-fluid img-thumbnail rounded-3" src="images/gallery/gallery-9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery part end  -->
+
+        <!-- Contact part start -->
+        <section class="container my-5">
+            <div class="d-flex justify-content-center">
+                <div class="w-50 text-center">
+                    <h1 class="oheading fw-bold border-bottom border-primary border-5 pb-4 shadow-lg mt-5">Contact Us
+                    </h1>
+                    <p class="mt-3 custom-p">Far far away,
+                        behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there
+                        live the blind texts.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-8">
+                    <div class="p-3">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-6 col-md-6 col-lg-6">
+                                    <div class="p-2">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-6 col-lg-6">
+                                    <div class="p-2">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="p-2">
+                                <textarea class="form-control" placeholder="Massege" rows="10" cols="50"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="p-3">
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Location</h3>
+                                <small>sector:06, road:08, house:14 uttara-1230</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Open hours:</h3>
+                                <small>Sunday-Friday:</small>
+                                <small>11:00am - 11:00pm</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Email:</h3>
+                                <small>theroyelcoatching@gmail.com</small>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="custom">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h3 class="fw-bold custom-h">Call:</h3>
+                                <small>+880 1777-990704</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact part end -->
+    </main>
+    <!-- Main part end  -->
+    <!-- footer part start  -->
+    <footer class="foot">
+        <section class="container py-5">
+            <div class="row p-5 g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">About The Royal Coatching</h4>
+                    <p class="text-white mt-5">Far far away, behind the word mountains, far from the countries Vokalia
+                        and Consonantia, there
+                        live the blind texts.</p>
+                    <div class="d-flex mt-5">
+                        <div class="custom-foot">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-behance"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="custom-foot">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">Batches</h4>
+                    <div class="mt-5">
+                        <p class="text-white">Class-1 to Class-5</p>
+                        <p class="text-white">Class-6 to Class-8</p>
+                        <p class="text-white">Class-9 to Class-10</p>
+                        <p class="text-white">Class-12</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">Gallery</h4>
+                    <div class="row g-3 mt-5">
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/gallery/gallery-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/gallery/gallery-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/gallery/gallery-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/gallery/gallery-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/gallery/gallery-5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-4 col-lg-4">
+                            <div>
+                                <img class="img-fluid img-thumbnail" src="images/gallery/gallery-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h4 class="text-white fw-bold">Contact Us</h4>
+                    <div class="mt-5">
+                        <p class="text-white">sector:06, road:08, house:14 uttara-1230</p>
+                        <p class="text-white">email: theroyelcoatching@gmail.com</p>
+                        <p class="text-white">call: +880 1777-990704</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 text-center text-white">
+                <p>Copyright ©2021 All rights reserved | This template is made by Abu Hasna Rana</p>
+            </div>
+        </section>
+    </footer>
+    <!-- footer part end  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

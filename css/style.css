@@ -1,0 +1,96 @@
+@keyframes sliding {
+    from{
+        background-color: greenyellow;
+    }
+    to{
+        background-color: red;
+    }
+}
+.animation{
+ animation: sliding 1s ease-in-out 0.2s infinite alternate;
+ animation-play-state: running;
+}
+@keyframes sliding2 {
+    from {
+        border: 5px solid green;
+    }
+
+    to {
+        border: 5px solid gray;
+    }
+}
+.animation2{
+    animation: sliding2 1s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
+}
+.oheading{
+    color: #5cb100;
+}
+.background{
+    background-image: url(../images/background/background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+}
+
+.fas{
+    font-size: 24px;
+}
+.custom-p{
+    font-size: 20px;
+}
+.container-fluid{
+    background-image: url(../images/background/background-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    opacity: 0.5;
+}
+.overlay{
+    height: 500px;
+}
+.card:hover img{
+    transform: scale(1.50);
+    transition: transform 0.5s ease-in-out;
+
+}
+.gallery img:hover{
+     transform: scale(1.75) rotate(360deg);
+     transition: transform 1.5s ease-in-out;
+     opacity: 0.3;
+
+}
+.custom{
+    background-color: #5cb100;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-foot{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    border: 1px dotted red;
+}
+.custom-foot:hover{
+    background-color: #5cb100;
+    transition: 1s;
+}
+.custom-h{
+    color: #5cb100;
+}
+.foot{
+    background-color: #5cb100;
+}
+
